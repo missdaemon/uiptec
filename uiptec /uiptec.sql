@@ -44,14 +44,8 @@ WHERE Precio < 175;
 
 -- Seleccionar una lista con el nombre y precio de los artículos más caros de cada proveedor.
 SELECT id_fabricante AS Código_Fabricante, id AS Código_Articulo, Nombre AS Articulo, MAX(Precio) AS Precio  
-FROM Articulos 
+FROM Articulos
 GROUP BY id_fabricante ASC, id, Nombre LIMIT 1,3;
-
-
-
-
-
-
 
 -- Cambiar el nombre del producto 2 a Impresora.
 UPDATE Articulos 
