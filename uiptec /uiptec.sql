@@ -1,4 +1,4 @@
-CREATE DATABASE uiptec;
+
 USE uiptec;
 
 CREATE TABLE Fabricantes(
