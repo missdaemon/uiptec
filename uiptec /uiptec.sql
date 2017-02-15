@@ -1,6 +1,5 @@
-
 USE uiptec;
-
+i
 CREATE TABLE Fabricantes(
 id INT PRIMARY KEY AUTO_INCREMENT,
 Nombre VARCHAR(250));
@@ -31,7 +30,6 @@ SELECT * FROM Articulos ORDER BY id_fabricante ASC;
 -- Seleccionar todos los datos de los articulos cuyo precio esta entre 50$ y 100$
 SELECT id AS Código, Nombre as Articulo, Precio FROM Articulos
 WHERE Precio >= 50 AND Precio <= 100;
--- Seleccionar todos los datos de los artículos cuyo precio está entre $50 y $100.
 
 -- Seleccionar el precio promedio de los artículos cuyo fabricante tenga el código 3.
 SELECT AVG(Precio) FROM Articulos  
@@ -51,7 +49,4 @@ GROUP BY id_fabricante ASC, id, Nombre LIMIT 1,3;
 UPDATE Articulos 
 SET Nombre = 'Impresora'
 WHERE id = '1602';
-
-
-
 
